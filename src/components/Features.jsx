@@ -5,7 +5,7 @@ import Avatar from '../assets/avatar.png'
 
 export const Features = () => {
   return (
-    <div className="w-full h-full pt-[166px] flex flex-col items-center justify-center">
+    <div className="max-w-[1248px] mx-auto w-full h-full pt-[166px] flex flex-col items-center justify-center">
       <div className='w-[678px] text-center'>
         <SectionTitle text="// features" />
         <p className='mt-6 text-white text-[60px] font-medium leading-[50px] tracking-[-3px]'>

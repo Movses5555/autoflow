@@ -11,7 +11,7 @@ import AirplaneIcon from '../assets/AirplaneIcon.png'
 
 export const Banner = () => {
   return (
-    <div className="w-full h-full px-[51px] flex justify-center gap-[34px]">
+    <div className="w-full h-full flex justify-center gap-[34px]">
       <div className='w-[629px] pt-[80px] pr-[62px]'>
         <SectionTitle text="// welcome to autoflow" />
         <div className='w-full mt-8'>
@@ -39,19 +39,19 @@ export const Banner = () => {
             <div className='w-7 h-7 rounded-full flex items-center justify-center bg-[#CDFF05]'>
               <img src={CheckSmall} className='w-7 h-7'/>
             </div>
-            <span className='font-medium text-20 leading-3.5 tracking-[-1px]'>Take Payments</span>
+            <span className='font-medium text-20 leading-3.5 tracking-[-1.5px]'>Take Payments</span>
           </div>
           <div className='flex items-center gap-[10px]'>
             <div className='w-7 h-7 rounded-full flex items-center justify-center bg-[#CDFF05]'>
               <img src={CheckSmall} className='w-7 h-7'/>
             </div>
-            <span className='font-medium text-20 leading-3.5 tracking-[-1px]'>E-Signatures</span>
+            <span className='font-medium text-20 leading-3.5 tracking-[-1.5px]'>E-Signatures</span>
           </div>
           <div className='flex items-center gap-[10px]'>
             <div className='w-7 h-7 rounded-full flex items-center justify-center bg-[#CDFF05]'>
               <img src={CheckSmall} className='w-7 h-7'/>
             </div>
-            <span className='font-medium text-20 leading-3.5 tracking-[-1px]'>Fleet Management</span>
+            <span className='font-medium text-20 leading-3.5 tracking-[-1.5px]'>Fleet Management</span>
           </div>
         </div>
       </div>

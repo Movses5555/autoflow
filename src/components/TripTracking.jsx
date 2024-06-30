@@ -4,7 +4,7 @@ import Calendar from '../assets/calendar.png'
 
 export const TripTracking = () => {
   return (
-    <div className="w-full h-full mt-[35px] flex justify-between pt-[72px] rounded-[12px] border border-[#F5F5F5] ">
+    <div className="max-w-[1248px] mx-auto w-full h-full mt-[35px] flex justify-between pt-[72px] rounded-[12px] border border-[#F5F5F5] ">
       <div className=''>
         <div className='pl-[110px] pr-[132px] mt-[61px]'>
           <SectionTitle text="// trip tracking" />
