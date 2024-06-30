@@ -1,4 +1,3 @@
-
 import { SectionTitle } from './SectionTitle';
 import Calendar from '../assets/calendar.png'
 
@@ -17,7 +16,7 @@ export const TripTracking = () => {
         </div>
       </div>
       <div className='flex items-end justify-end'>
-        <div className='w-[557px] h-[488px] rounded-[12px] border border-[#898989] ' >
+        <div className='w-[557px] h-[488px] rounded-tl-[12px] rounded-br-[12px] border border-[#898989] ' >
           <div className='w-full h-[122px] pt-9 pl-[42px] '>
             <p className='text-xs leading-[8px] text-white'>2024</p>
             <p className='mt-[14px] text-[36px] leading-[25px] text-white'>June</p>
