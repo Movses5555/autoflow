@@ -25,20 +25,21 @@ function App() {
   })
 
   return (
-    <div className='relative w-full h-full'>
+    <div className='relative w-full h-full font-hoves'>
       <img
         src={Mask1}
         alt="mask_1"
-        className='absolute top-0 left-0 w-full h-auto z-0 max-w-full max-h-[1860px] object-cover object-center'
+        className='absolute top-0 left-0 w-full h-auto z-0 max-w-full max-h-1860 object-cover object-center'
       />
       <img
         src={Mask2}
         alt="mask_2"
-        className='absolute top-[2350px] left-0 w-full h-auto z-0 max-w-full max-h-[1860px] object-cover object-center'
+        className='absolute top-2350 left-0 w-full h-auto z-0 max-w-full max-h-1860 object-cover object-center'
       />
       <div 
         style={{top: height + "px"}}
-        className={`absolute left-0 w-full h-auto z-0 max-w-full max-h-[1860px] object-cover object-center overflow-hidden`}>
+        className={`absolute left-0 w-full h-auto z-0 max-w-full max-h-1860 object-cover object-center overflow-hidden`}
+      >
         <img
           src={Mask3}
           alt="mask_3"
@@ -46,7 +47,7 @@ function App() {
       </div>
       <div ref={ref} className='absolute w-full h-auto z-1'>
         <Header />
-        <div className={`max-w-[1292px] mx-auto pt-[155px] relative w-full h-auto `}>
+        <div className={`max-w-1292 mx-auto pt-155 relative w-full h-auto `}>
           <Banner />  
           <Features /> 
           <TripTracking /> 

@@ -5,18 +5,16 @@
 
 @font-face {
   font-family: 'TT Hoves Pro Trial';
-  src: url('/path-to-your-fonts/TT-Hoves-Pro-Trial.woff2') format('woff2'),
-       url('/path-to-your-fonts/TT-Hoves-Pro-Trial.woff') format('woff'),
-       url('/path-to-your-fonts/TT-Hoves-Pro-Trial.ttf') format('truetype');
+  src: url('/fonts/TT-Hoves-Pro-Trial.woff2') format('woff2'),
+       url('/fonts/TT-Hoves-Pro-Trial.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'TT Hoves Pro Trial';
-  src: url('/path-to-your-fonts/TT-Hoves-Pro-Trial-Bold.woff2') format('woff2'),
-       url('/path-to-your-fonts/TT-Hoves-Pro-Trial-Bold.woff') format('woff'),
-       url('/path-to-your-fonts/TT-Hoves-Pro-Trial-Bold.ttf') format('truetype');
+  src: url('/fonts/TT-Hoves-Pro-Trial-Bold.woff2') format('woff2'),
+       url('/fonts/TT-Hoves-Pro-Trial-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
