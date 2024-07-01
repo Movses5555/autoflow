@@ -15,7 +15,7 @@ export const Banner = () => {
       <div className='w-[629px] pt-[80px] pr-[62px]'>
         <SectionTitle text="// welcome to autoflow" />
         <div className='w-full mt-8'>
-          <p className='font-medium text-8xl leading-[82px] tracking-[-5px]'>
+          <p className='font-medium text-8xl leading-[82px] tracking-[-7.5px]'>
             Cruise control for your fleet.
           </p>
         </div>
