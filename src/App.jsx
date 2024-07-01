@@ -36,7 +36,9 @@ function App() {
         alt="mask_2"
         className='absolute top-[2350px] left-0 w-full h-auto z-0 max-w-full max-h-[1860px] object-cover object-center'
       />
-      <div className={`absolute top-[${height}px] left-0 w-full h-auto z-0 max-w-full max-h-[1860px] object-cover object-center overflow-hidden`}>
+      <div 
+        style={{top: height + "px"}}
+        className={`absolute left-0 w-full h-auto z-0 max-w-full max-h-[1860px] object-cover object-center overflow-hidden`}>
         <img
           src={Mask3}
           alt="mask_3"
