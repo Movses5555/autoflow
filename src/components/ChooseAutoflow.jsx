@@ -40,7 +40,7 @@ export const ChooseAutoflow = () => {
                 <div className='mr-6 bg-[#CDFF05] rounded-full w-[40px] h-[30px] flex items-center justify-center'>
                   <span className='text-black text-[14px] leading-[10px]'>02</span>
                 </div>
-                <p className='text-[24px] leading-[17px] text-white'>
+                <p className='text-[24px] leading-[17px] text-white tracking-[-1.5px]'>
                   Integrate Stripe to take payments
                 </p>
               </div>
