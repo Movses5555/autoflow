@@ -13,7 +13,6 @@ import { Footer } from './components/Footer';
 import Mask1 from './assets/Mask_1.png';
 import Mask2 from './assets/Mask_2.png';
 import Mask3 from './assets/Mask_3.png';
-import { useEffect } from 'react';
 
 
 function App() {
