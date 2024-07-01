@@ -17,11 +17,11 @@ import Mask3 from './assets/Mask_3.png';
 
 function App() {
 
-  const [height, setHeight] = useState(5000)
+  const [height, setHeight] = useState(5151)
   const ref = useRef(null)
 
   useEffect(() => {
-    setHeight(ref.current.clientHeight)
+    setHeight(ref.current.clientHeight - 1229)
   })
 
   return (
