@@ -1,26 +1,26 @@
 import React, {useState, useEffect, useRef} from 'react';
+import { useDispatch, useSelector } from "react-redux";
+import { fetchInitDataAsync } from '@/redux/clientReducer';
 import { Header } from '@/components/Header';
-import { Banner } from '@/components/Banner';
-import { Features } from '@/components/Features';
-import { TripTracking } from '@/components/TripTracking';
-import { ChooseAutoflow } from '@/components/ChooseAutoflow';
-import { EverythingOnePlace } from '@/components/EverythingOnePlace';
-import { Pricing } from '@/components/Pricing';
-import { FAQs } from '@/components/FAQs';
 import { GetItDone } from '@/components/GetItDone';
 import { PreFooter } from '@/components/PreFooter';
 import { Footer } from '@/components/Footer';
+import { Spinner } from '@/components/Spinner';
 import Mask1 from '@/assets/Mask_1.png';
 import Mask2 from '@/assets/Mask_2.png';
 import Mask3 from '@/assets/Mask_3.png';
-// import { Loader } from '@/components/Loader';
-import { Layouts } from '@/layouts';
 
+export const HomepageLayout = ({children}) => {
 
-function App() {
-
+  const dispatch = useDispatch();
   const [height, setHeight] = useState(5151)
   const ref = useRef(null)
+
+  const { loadingInitData } = useSelector((state) => state.client);
+
+  useEffect(() => {
+    dispatch(fetchInitDataAsync());
+  }, [dispatch])
 
   useEffect(() => {
     if(ref?.current) {
@@ -29,17 +29,13 @@ function App() {
   })
 
 
-  return (
-    <Layouts>
-      {/* <Banner />  
-      <Features /> 
-      <TripTracking /> 
-      <ChooseAutoflow /> 
-      <EverythingOnePlace />
-      <Pricing />
-      <FAQs /> */}
-    </Layouts>
-  )
+  if (loadingInitData) {
+    return (
+      <div className='w-full h-svh'>
+        <Spinner />
+      </div>
+    );
+  }
 
   return (
     <div className='relative w-full h-full font-hoves'>
@@ -65,13 +61,7 @@ function App() {
       <div ref={ref} className='absolute w-full h-auto z-1'>
         <Header />
         <div className={`max-w-1292 mx-auto pt-155 relative w-full h-auto `}>
-          <Banner />  
-          <Features /> 
-          <TripTracking /> 
-          <ChooseAutoflow /> 
-          <EverythingOnePlace />
-          <Pricing />
-          <FAQs />
+          {children}
           <GetItDone />
           <PreFooter />
         </div>
@@ -79,6 +69,5 @@ function App() {
       </div>
     </div>
   )
-}
+};
 
-export default App

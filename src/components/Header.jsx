@@ -4,24 +4,24 @@ import Logo from '../assets/logo.png'
 
 const Links = [
   {
-    name: "Home",
+    name: "home",
     path: '/'
   },
   {
-    name: "Problem",
-    path: '/'
+    name: "problem",
+    path: '/problem'
   },
   {
-    name: "Solution",
-    path: '/'
+    name: "solution",
+    path: '/solution'
   },
   {
-    name: "Features",
-    path: '/'
+    name: "features",
+    path: '/features'
   },
   {
-    name: "Pricing",
-    path: '/'
+    name: "pricing",
+    path: '/pricing'
   }
 ]
 
@@ -45,7 +45,7 @@ export const Header = () => {
                     to={link.path}
                     className=''
                   >
-                    <span className='text-xs font-semibold leading-8'>{link.name}</span>
+                    <span className='text-xs font-semibold leading-8 uppercase'>{link.name}</span>
                   </Link>
                 )
               })
