@@ -66,8 +66,8 @@ export const Banner = () => {
               <select
                 value='june_2024'
                 name="date"
-                defaultValue="june_2024"
                 className='border bg-green-200 text-black text-xs pl-15 border-black rounded-17 w-95 h-22'
+                onChange={() => {}}
               >
                 <option value="june_2024">June 2024</option>
               </select>
