@@ -11,6 +11,7 @@ import Mask1 from '@/assets/Mask_1.png';
 import Mask2 from '@/assets/Mask_2.png';
 import Mask3 from '@/assets/Mask_3.png';
 import Mask4 from '@/assets/Mask_4.png';
+import Mask5 from '@/assets/Mask_5.png';
 
 export const HomepageLayout = ({children}) => {
 
@@ -66,7 +67,7 @@ const Masks = ({
       <>
         <img
           src={Mask4}
-          alt="mask_1"
+          alt="mask_4"
           className='absolute top-0 right-0 w-full h-auto z-0 max-w-full max-h-1860 object-cover object-center'
         />
         <div 
@@ -79,6 +80,15 @@ const Masks = ({
           />
         </div>
       </>
+    )
+  }
+  if(path == '/contact') {
+    return (
+      <img
+        src={Mask5}
+        alt="mask_5"
+        className='absolute top-0 right-0 w-full h-auto z-0 max-w-full max-h-[1550px] object-cover object-center'
+        />
     )
   }
 
