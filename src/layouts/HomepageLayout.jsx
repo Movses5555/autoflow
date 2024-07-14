@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef} from 'react';
+import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { fetchInitDataAsync } from '@/redux/clientReducer';
 import { Header } from '@/components/Header';
@@ -39,6 +40,49 @@ export const HomepageLayout = ({children}) => {
 
   return (
     <div className='relative w-full h-full font-hoves'>
+      <Masks height={height}/>
+      <div ref={ref} className='absolute w-full h-auto z-1'>
+        <Header />
+        <div className={`max-w-1292 mx-auto pt-155 relative w-full h-auto `}>
+          {children}
+          <GetItDone />
+          <PreFooter />
+        </div>
+        <Footer />
+      </div>
+    </div>
+  )
+};
+
+const Masks = ({
+  height
+}) => {
+  const location = useLocation()
+  const path = location.pathname
+
+  if(path == '/faq') {
+    return (
+      <>
+        <img
+          src={Mask1}
+          alt="mask_1"
+          className='absolute top-[100px] right-[-200px] w-full h-auto z-0 max-w-full max-h-1860 object-cover object-center'
+        />
+        <div 
+          style={{top: height + "px"}}
+          className={`absolute left-0 w-full h-auto z-0 max-w-full max-h-1860 object-cover object-center overflow-hidden`}
+        >
+          <img
+            src={Mask3}
+            alt="mask_3"
+          />
+        </div>
+      </>
+    )
+  }
+
+  return (
+    <>
       <img
         src={Mask1}
         alt="mask_1"
@@ -58,16 +102,7 @@ export const HomepageLayout = ({children}) => {
           alt="mask_3"
         />
       </div>
-      <div ref={ref} className='absolute w-full h-auto z-1'>
-        <Header />
-        <div className={`max-w-1292 mx-auto pt-155 relative w-full h-auto `}>
-          {children}
-          <GetItDone />
-          <PreFooter />
-        </div>
-        <Footer />
-      </div>
-    </div>
+    </>
   )
 };
 

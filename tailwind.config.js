@@ -14,7 +14,10 @@ export default {
       "0.5": "0.0313rem", // 0.5px
       "0.7": "0.044rem", // 0.7px
       "1.5": "0.0938rem", // 1.5px
+      "2.4": "0.15rem", // 2.4px
+      "2.6": "0.163rem", // 2.6px
       "3": "0.1875rem", // 3px
+      "3.84": "0.24rem", // 3.84px
       "5": "0.3125rem", // 5px
     },
 
@@ -57,6 +60,7 @@ export default {
         '22': '1.375rem', // 22px
         '30': '1.875rem', // 30px
         '31': '1.9375rem', // 31px
+        '39': '2.438rem', // 39px
         '42': '2.625rem', // 42px
         '52': '3.25rem', // 52px
         '60': '3.75rem', // 60px
@@ -96,6 +100,7 @@ export default {
         '72': '4.5rem', // 72px
         '77': '4.8125rem', // 77px
         '78': '4.875rem', // 78px
+        '88': '5.5rem', // 88px
         '96': '6rem', // 96px
         '143': '8.9375rem', // 143px
         '146': '9.125rem', // 146px
@@ -239,8 +244,37 @@ export default {
         '54': '3.375rem', // 54px
         '82': '5.125rem', // 82px
       },
+
+      rotate: {
+        '3.414': '3.414deg',
+        '9.702': '9.702deg',
+      },
+
+      lineClamp: {
+        4: '4',
+        5: '5',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        '.line-clamp-4': {
+          overflow: 'hidden',
+          display: '-webkit-box',
+          '-webkit-box-orient': 'vertical',
+          '-webkit-line-clamp': '4',
+        },
+        '.line-clamp-5': {
+          overflow: 'hidden',
+          display: '-webkit-box',
+          '-webkit-box-orient': 'vertical',
+          '-webkit-line-clamp': '5',
+        }
+      };
+
+      addUtilities(newUtilities, ['responsive', 'hover']);
+    }
+  ],
 }
 

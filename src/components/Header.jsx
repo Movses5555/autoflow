@@ -27,7 +27,7 @@ const Links = [
 
 export const Header = () => {
   return (
-    <div className="fixed z-30 w-full top-0 left-0 h-56 px-9 header-bg">
+    <div className="fixed z-50 w-full top-0 left-0 h-56 px-9 header-bg">
       <div className="h-full flex items-center justify-between">
         <div className="">
           <img

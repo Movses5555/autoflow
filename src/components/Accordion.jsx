@@ -47,7 +47,7 @@ export const Accordion = () => {
           const active = item.id === activeId;
           return (
             <Fragment key={item.id.toString()}>
-              <div className='flex w-full mb-35'>
+              <div className='flex justify-between w-full mb-35'>
                 <div className='w-593 mr-143'>
                   <p className='text-2xl text-white leading-17'>
                     {item.question}

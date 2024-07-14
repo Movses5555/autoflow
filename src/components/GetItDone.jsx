@@ -1,7 +1,7 @@
 
 export const GetItDone = () => {
   return (
-    <div className="max-w-1248 h-303 bg-green-200 mx-auto w-full mt-146 flex items-center justify-between rounded-12 ">
+    <div className="max-w-1248 h-303 bg-green-200 mx-auto w-full flex items-center justify-between rounded-12 ">
       <div className='w-full flex flex-col items-center justify-center'>       
         <div className="mt-54">
           <span className='uppercase text-xs text-black-200 font-semibold leading-8'>
